@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:web_socket_channel/io.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
@@ -61,7 +63,7 @@ class _WebSocketAppState extends State<WebSocketApp> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "BTC/USDT Price",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
